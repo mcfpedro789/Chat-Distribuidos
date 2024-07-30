@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="header">Chat Application</div>
+        <div id="room-container">
+            <button id="create-room-button">Create Room</button>
+            <div id="room-list"></div>
+        </div>
+        <div id="message-container" style="display:none;">
+            <div id="messages"></div>
+            <div id="input-container">
+                <input type="text" id="message-input" placeholder="Type your message here...">
+                <button id="emoji-button">😀</button>
+                <button id="send-button">Send</button>
+            </div>
+            <div id="emoji-picker" style="display: none;"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@4.6.2/dist/emoji-button.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
