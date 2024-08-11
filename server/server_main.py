@@ -11,7 +11,7 @@ from users_rooms import (
 )
 import requests
 
-PRIMARY_SERVER = True  
+PRIMARY_SERVER = True
 REPLICA_SERVER_URL = "https://localhost:8080"
 
 load_data()

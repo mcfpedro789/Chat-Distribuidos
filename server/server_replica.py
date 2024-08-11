@@ -13,7 +13,7 @@ from users_rooms import (
 import requests
 
 PRIMARY_SERVER = False  # Set to False for the replica server
-REPLICA_SERVER_URL = "https://localhost:8080"
+REPLICA_SERVER_URL = "https://3884-2804-14d-5e81-82ef-e0c1-1f55-f44a-597c.ngrok-free.app"
 
 def reload_data():
     """Função para recarregar dados periodicamente."""

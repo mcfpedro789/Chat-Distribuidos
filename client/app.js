@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const messageInput = document.getElementById('message-input');
     const sendButton = document.getElementById('send-button');
     const emojiButton = document.getElementById('emoji-button');
+    const backToLobbyButton = document.getElementById('back-to-lobby-button');
     let currentRoom = '';
 
     // Emoji picker initialization
@@ -78,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             currentRoom = room;
                             messageContainer.style.display = 'block';
                             roomContainer.style.display = 'none';
+                            backToLobbyButton.style.display = 'block';
                             fetchMessages();
                         } else {
                             alert('Failed to join room');
@@ -134,6 +136,14 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // Função para retornar ao lobby
+    backToLobbyButton.addEventListener('click', () => {
+        currentRoom = '';
+        messageContainer.style.display = 'none';
+        backToLobbyButton.style.display = 'none';
+        roomContainer.style.display = 'block';
+    });
 
     loadRooms();
     setInterval(loadRooms, 5000);  // Atualiza a lista de salas a cada 5 segundos
