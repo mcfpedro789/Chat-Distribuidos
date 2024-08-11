@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat App</title>
+    <title>Chat App with Emoji</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,8 +22,13 @@
             </div>
             <div id="emoji-picker" style="display: none;"></div>
         </div>
+        <button id="leave-room-button" style="display:none;">Leave Room</button>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@4.6.2/dist/emoji-button.min.js"></script>
-    <script src="app.js"></script>
+
+    <!-- Referenciando o emoji-mart corretamente -->
+    <script src="./js/emoji-mart.js"></script>
+
+    <!-- Seu script principal -->
+    <script src="./app.js"></script>
 </body>
 </html>

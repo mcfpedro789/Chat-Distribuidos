@@ -1,7 +1,7 @@
 document.getElementById('login-button').addEventListener('click', () => {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
-    fetch('http://localhost:8080/login', {
+    fetch('/login', {  // Modificação: removido "http://localhost:8080"
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -21,7 +21,7 @@ document.getElementById('login-button').addEventListener('click', () => {
 document.getElementById('register-button').addEventListener('click', () => {
     const username = document.getElementById('register-username').value;
     const password = document.getElementById('register-password').value;
-    fetch('http://localhost:8080/register', {
+    fetch('/register', {  // Modificação: removido "http://localhost:8080"
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
